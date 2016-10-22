@@ -103,14 +103,15 @@ blockquote {
   font-family: "Abril Fatface", cursive, serif;
   color: #307D7E;
 }
+
 blockquote::before {
   position: absolute;
   top: 40px;
   left: 0;
   content: open-quote;
   font-size: 8em;
-
 }
+
 blockquote p {
   padding: 20px 0;
   display: block;
