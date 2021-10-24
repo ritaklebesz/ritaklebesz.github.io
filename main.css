@@ -21,7 +21,7 @@ body {
   margin: 0 20%;
   display: flex;
   align-items: flex-end;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .background {
@@ -42,11 +42,11 @@ body {
   margin: 0 0 0 20px;
 }
 
-h1, h2 {
+h1, .right p {
   font-family: "Abril Fatface", cursive, serif;
   margin: 0;
   width: 100%;
-  color: #307D7E;
+  color: #2462a0;
   padding: 0px;
   font-weight: 400;
   text-shadow: 1px 1px 32px white;
@@ -55,10 +55,10 @@ h1, h2 {
 h1 {
   font-size: 70px;
   line-height: 70px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
-h2 {
+.right p {
   font-size: 35px;
   line-height: 35px;
 }
@@ -67,7 +67,7 @@ img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 3px solid #307D7E;
+  border: 3px solid #2462a0;
 }
 
 main {
@@ -83,7 +83,7 @@ main {
 .intro {
   font-size: 19px;
   line-height: 27px;
-  margin: 50px auto;
+  margin: 50px auto 1%;
   text-align: justify;
 }
 
@@ -97,11 +97,11 @@ ul {
 
 blockquote {
   background: #E5E4E2;
-  margin: 1.5em -35px;
+  margin: 3em -35px;
   quotes: "\201C""\201D";
   position: relative;
   font-family: "Abril Fatface", cursive, serif;
-  color: #307D7E;
+  color: #5795d3;
 }
 
 blockquote::before {
@@ -129,11 +129,22 @@ h3 {
   font-size: 22px;
   font-stretch: expanded;
   text-transform: uppercase;
-  margin: 5% auto;
-  color: #307D7E;
+  margin: 4em auto 0;
+  color: #2462a0;
 }
 
 .container2 {
+  margin: 3em auto 1em;
+  display: flex;
+}
+
+.container2first {
+  margin: 1.5em auto 1em;
+  display: flex;
+}
+
+.skills {
+  margin: 1.5em auto 1em;
   display: flex;
 }
 
@@ -151,11 +162,15 @@ h5 {
 }
 
 p, ul {
-  margin: 5% 0;
+  margin: 1% 0;
+  text-align: justify;
 }
 
-hr {
-  height: 4px;
-  background: #2C3539;
-  margin: auto -35px;
+.aboutme {
+  margin: 1% 0;
+}
+
+.column {
+  flex-basis: 0;
+  flex-grow: 1;
 }
